@@ -1,0 +1,182 @@
+      
+body *, body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap; /* Para que se acomoden mejor en pantallas pequeñas */
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #c2aeee;
+background: radial-gradient(circle, rgba(194, 174, 238, 1) 0%, rgba(148, 187, 233, 1) 100%);color: #333; 
+}
+
+header {
+    width: 100%;
+    height: 400px;
+    background-image: url("https://marketplace.canva.com/EAFCLpgMExU/1/0/1600w/canva-fondo-de-pantalla-frase-motivacional-acuarela-azul-Trze_a2x-CA.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+header img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+header div {
+    background: linear-gradient(
+        90deg,
+        rgba(98, 37, 204, 0.45) 43%, 
+        rgba(64, 207, 190, 0.60) 100%
+    );
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: azure;
+    text-align: center;
+}
+
+/* 🔹 Mejor diseño para las secciones */
+section {
+    max-width: 300px;
+    width: 100%;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    background: #EEAECA;
+    background: radial-gradient(circle, rgb(161, 219, 236) 0%, rgb(140, 176, 255) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+section h3 {
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+section img {
+    width: 70%;
+    border-radius: 12px;
+    margin: 15px 0;
+}
+
+/* 🔹 Estilos modernos para listas */
+ul, ol {
+    list-style: none; /* quitamos bullets por defecto */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+li {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    padding: 10px 15px;
+    margin: 8px 0;
+    background: #f0f4ff;
+    border-radius: 10px;
+    font-weight: 500;
+    text-align: left;
+}
+
+/* Hover con animación */
+li:hover {
+    background: #dbe4ff;
+}
+
+/* 🔹 Numeración personalizada para listas ordenadas */
+ol {
+    counter-reset: item;
+}
+
+ol li {
+    list-style: none;
+    position: relative;
+    padding-left: 40px;
+}
+
+ol li::before {
+    counter-increment: item;
+    content: counter(item) ".";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    color: #4a6cf7;
+}
+
+footer {
+    background: linear-gradient(90deg, rgba(98, 37, 204, 0.6), rgba(64, 207, 190, 0.6));
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    margin-top: 40px;
+    border-top: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #22fff8; /* un amarillo claro para resaltar el enlace */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Input de suscripción */
+footer input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin: 10px;
+    width: 220px;
+    max-width: 90%;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Botón */
+footer button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #4a6cf7;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+footer button:hover {
+    background: #3751c5;
+}
